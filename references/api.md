@@ -4,7 +4,7 @@ This is a condensed reference for curl fallback mode. For full schemas, see the 
 
 All requests require `-H "x-mythos-key: YOUR_API_KEY"`.
 
-Base URL: `https://mythos.one` (production) or `http://localhost:3003` (local dev).
+Base URL: `https://mythos.one`
 
 ---
 

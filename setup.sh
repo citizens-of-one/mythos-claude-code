@@ -34,7 +34,7 @@ if [[ ! "$MYTHOS_API_KEY" =~ ^mtk_[0-9a-f]{64}$ ]]; then
   echo ""
   echo "Error: MYTHOS_API_KEY format is invalid."
   echo "  Expected: mtk_ followed by 64 hex characters."
-  echo "  Got: ${MYTHOS_API_KEY:0:12}..."
+  echo "  Got: ${MYTHOS_API_KEY:0:8}..."
   exit 1
 fi
 
@@ -47,7 +47,7 @@ if [ -z "${MYTHOS_USERNAME:-}" ]; then
   exit 1
 fi
 
-echo "API Key: ${MYTHOS_API_KEY:0:12}..."
+echo "API Key: ${MYTHOS_API_KEY:0:8}..."
 echo "Username: $MYTHOS_USERNAME"
 echo "MythOS URL: $MYTHOS_URL"
 echo ""
