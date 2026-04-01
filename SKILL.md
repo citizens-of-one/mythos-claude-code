@@ -40,7 +40,7 @@ Before using any MythOS tools, determine which mode you're operating in:
    > ```
    > Or generate an API key at Settings > Agents in the MythOS app, then run:
    > ```
-   > claude mcp add --transport http -H "x-mythos-key: YOUR_KEY" -H "x-mythos-username: YOUR_USERNAME" mythos https://mythos.one/api/mcp
+   > claude mcp add --transport http -s user -H "x-mythos-key: YOUR_KEY" -H "x-mythos-username: YOUR_USERNAME" mythos https://mythos.one/api/mcp
    > ```"
 
 ## MCP Tools Reference

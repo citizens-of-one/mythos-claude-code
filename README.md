@@ -65,7 +65,7 @@ cp references/workflows.md ~/.claude/skills/mythos/references/
 **2. Register the MCP server:**
 
 ```bash
-claude mcp add --transport http \
+claude mcp add --transport http -s user \
   -H "x-mythos-key: YOUR_API_KEY" \
   -H "x-mythos-username: YOUR_USERNAME" \
   mythos https://mythos.one/api/mcp
