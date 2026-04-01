@@ -93,9 +93,9 @@ echo "Registering MythOS MCP server..."
 claude mcp add \
   --transport http \
   -s user \
-  -H "x-mythos-key: $MYTHOS_API_KEY" \
-  -H "x-mythos-username: $MYTHOS_USERNAME" \
-  mythos "$MYTHOS_URL/api/mcp"
+  mythos "$MYTHOS_URL/api/mcp" \
+  --header "x-mythos-key: $MYTHOS_API_KEY" \
+  --header "x-mythos-username: $MYTHOS_USERNAME"
 
 # 7. Post-check
 echo ""
